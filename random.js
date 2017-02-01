@@ -5,7 +5,8 @@ var namespace = "http://www.w3.org/2000/svg"
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createFirstScene() {
-    
+    makeImage("http://wallpapercave.com/wp/d8wldxe.jpg", 0, 0, 100, 50, 1.0)
+    makeImage("http://images.en.yibada.com/data/thumbs/full/97494/685/0/0/0/with-the-originals-season-4-already-confirmed-new-rumors-are-loud-that-the-upcoming-season-will-feature-klaus-played-by-joseph-morgan-returning-to-his-old-wicked-self.png", 0, 0, 100, 50, 1.0)
 }
 
 
@@ -13,7 +14,7 @@ function createFirstScene() {
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createSecondScene() {
-    
+    makeImage("http://wallpapercave.com/wp/N3g425v.png", 0, 0, 200, 100, 1.0)
 }
 
 
@@ -32,19 +33,19 @@ function createThirdScene() {
 // This function is called whenever you press the "Go!" button.
 function createRandomScene() {
     // Generate a random number between 0 and 1, and store it in a variable.
-    
+    var myNumber = Math.random()
     // If the number is less than 0.33, call the function to create your first scene.
-    
-    
-    
+    if(myNumber < 0.33){
+        createFirstScene()
+    }
     // Else, if the number is less than 0.67, call the function to create your second scene.
-    
-    
-    
+    else if(myNumber < 0.67){
+    createSecondScene()
+    }
     // Else, call the function to create your third scene.
-    
-    
-    
+    else{
+    createThirdScene()
+    }
 }
 
 
