@@ -5,20 +5,39 @@ var namespace = "http://www.w3.org/2000/svg"
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createFirstScene() {
-    makeImage("https://cdn.shopify.com/s/files/1/1061/1924/files/Very_Angry_Emoji.png?9898922749706957214", 53, 3.5, 94, 93, "1.0")
-    makeText("Angry!", 75, 35, 20, "sansita", "blue", "1.0")
+  function createRandomPart(){
+     var thisNumber = Math.random()
+     if(thisNumber < 0.11){
+         makeImage("https://cdn.shopify.com/s/files/1/1061/1924/files/Very_Angry_Emoji.png?9898922749706957214", 53, 3.5, 94, 93, "1.0")
+         makeText("Angry!", 75, 35, 20, "sansita", "blue", "1.0")
+     } else if(thisNumber < 0.22){
+         secondPart()
+     } else {
+         thirdPart()
+     }
+     function firstPart(){
 }
-
+     }
 // Fill in this function so that it draws something using SVG shapes!
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createSecondScene() {  
-    makeCircle(100, 50, 45, "blue", "1.0")
+    
+    function createRandomImage(){
+        var thyNumber = Math.random()
+        if(thyNumber < 0.11){
+            makeCircle(100, 50, 45, "blue", "1.0")
     makeCircle(118, 35, 8, "1.0")
     makeCircle(83, 35, 8, "1.0")
     makeEllipse(100, 65, 30, 10, "white", "1.0")
     makeRect(70, 70, 60, 10, "blue", "1.0")
     makeText("Sad!", 82, 25, 20, "sansita", "purple", "1.0")
+        } else if(thyNumber < 0.22){
+            secondPart()
+        } else {
+            thirdPart()
+        }
+    }
 }
 
 
