@@ -5,15 +5,20 @@ var namespace = "http://www.w3.org/2000/svg"
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createFirstScene() {
-    makeImage("http://wallpapercave.com/wp/d8wldxe.jpg", -5, -15, 200, 150, 1.0) //vampire diaries
+    makeImage("https://cdn.shopify.com/s/files/1/1061/1924/files/Very_Angry_Emoji.png?9898922749706957214", 53, 3.5, 94, 93, "1.0")
+    makeText("Angry!", 75, 35, 20, "sansita", "blue", "1.0")
 }
-
 
 // Fill in this function so that it draws something using SVG shapes!
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createSecondScene() {  
-    makeImage("http://wallpapercave.com/wp/N3g425v.png", -125, 0, 420, 100, 1.0) //Supernatural
+    makeCircle(100, 50, 45, "blue", "1.0")
+    makeCircle(118, 35, 8, "1.0")
+    makeCircle(83, 35, 8, "1.0")
+    makeEllipse(100, 65, 30, 10, "white", "1.0")
+    makeRect(70, 70, 60, 10, "blue", "1.0")
+    makeText("Sad!", 82, 25, 20, "sansita", "purple", "1.0")
 }
 
 
@@ -25,8 +30,9 @@ function createThirdScene() {
     makeCircle(100, 50, 45, "yellow", "1.0")
     makeCircle(118, 35, 8, "1.0")
     makeCircle(83, 35, 8, "1.0")
-    makeEllipse(100, 70, 30, 15, "white", "1.0")
-    makeRect(100, 
+    makeEllipse(100, 65, 30, 15, "white", "1.0")
+    makeRect(70, 40, 60, 20, "yellow", "1.0")
+    makeText("Happy!", 75, 55, 20, "sansita", "green", "1.0")
 }
 
 
