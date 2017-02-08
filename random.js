@@ -5,39 +5,34 @@ var namespace = "http://www.w3.org/2000/svg"
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createFirstScene() {
-  function createRandomPart(){
      var thisNumber = Math.random()
      if(thisNumber < 0.11){
          makeImage("https://cdn.shopify.com/s/files/1/1061/1924/files/Very_Angry_Emoji.png?9898922749706957214", 53, 3.5, 94, 93, "1.0")
-         makeText("Angry!", 75, 35, 20, "sansita", "blue", "1.0")
+         makeText("Angry!", 75, 35, 20, "sansita", "blue", "1.0")//mad
      } else if(thisNumber < 0.22){
-         secondPart()
+         makeImage("https://cdn.shopify.com/s/files/1/1061/1924/files/Very_Mad_Emoji.png?9898922749706957214", 53, 3.5, 94, 93, "1.0")//fuming
      } else {
-         thirdPart()
+         makeImage("http://images.distractify.com/v0.2/body/2015/10/high-7.jpg", 53, 3.5, 94, 93, "1.0")//deadly
      }
-     function firstPart(){
-}
      }
+
 // Fill in this function so that it draws something using SVG shapes!
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createSecondScene() {  
-    
-    function createRandomImage(){
         var thyNumber = Math.random()
-        if(thyNumber < 0.11){
+        if(thyNumber < 0.45){
             makeCircle(100, 50, 45, "blue", "1.0")
     makeCircle(118, 35, 8, "1.0")
     makeCircle(83, 35, 8, "1.0")
     makeEllipse(100, 65, 30, 10, "white", "1.0")
     makeRect(70, 70, 60, 10, "blue", "1.0")
-    makeText("Sad!", 82, 25, 20, "sansita", "purple", "1.0")
-        } else if(thyNumber < 0.22){
-            secondPart()
+    makeText("Sad!", 82, 25, 20, "sansita", "purple", "1.0")//sad
+        } else if(thyNumber < 0.56){
+            makeImage("http://i1.mirror.co.uk/incoming/article5090721.ece/ALTERNATES/s615b/Paula-Cochrane.jpg", 53, 3.5, 94, 93, "1.0")// miserable
         } else {
-            thirdPart()
+        makeImage("https://duqwellbeing.files.wordpress.com/2015/10/emoji-overwhelmed.png", 53, 3.5, 94, 93, "1.0")//overwhelmed
         }
-    }
 }
 
 
@@ -45,15 +40,20 @@ function createSecondScene() {
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createThirdScene() {
-    
+        var mineNumber = Math.random()
+        if(mineNumber < 0.75){
     makeCircle(100, 50, 45, "yellow", "1.0")
     makeCircle(118, 35, 8, "1.0")
     makeCircle(83, 35, 8, "1.0")
     makeEllipse(100, 65, 30, 15, "white", "1.0")
     makeRect(70, 40, 60, 20, "yellow", "1.0")
-    makeText("Happy!", 75, 55, 20, "sansita", "green", "1.0")
+    makeText("Happy!", 75, 55, 20, "sansita", "green", "1.0")//happy
+        } else if(mineNumber < 0.85){
+            makeImage("https://rlv.zcache.com/face_with_tears_of_joy_emoji_classic_round_sticker-r8efa1045719143db81c284357ea6ef17_v9waf_8byvr_630.jpg?view_padding=%5B285%2C0%2C285%2C0%5D", 53, 3.5, 94, 93, "1.0")//joyful
+        } else {
+            makeImage("http://pix.iemoji.com/images/emoji/apple/ios-9/256/relieved-face.png", 53, 3.5, 94, 93, "1.0")//content
+        }
 }
-
 
 
 // FILL IN THIS FUNCTION!
