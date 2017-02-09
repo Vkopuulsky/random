@@ -11,8 +11,10 @@ function createFirstScene() {
          makeText("Angry!", 75, 35, 20, "sansita", "blue", "1.0")//mad
      } else if(thisNumber < 0.22){
          makeImage("https://cdn.shopify.com/s/files/1/1061/1924/files/Very_Mad_Emoji.png?9898922749706957214", 53, 3.5, 94, 93, "1.0")//fuming
+         makeText("Outraged!", 80, 35, 10, "sansita", "blue", "1.0")
      } else {
          makeImage("http://images.distractify.com/v0.2/body/2015/10/high-7.jpg", 53, 3.5, 94, 93, "1.0")//deadly
+         makeText("Deadly!", 80, 35, 12, "lobster", "black", "1.0")
      }
      }
 
@@ -30,8 +32,10 @@ function createSecondScene() {
     makeText("Sad!", 82, 25, 20, "sansita", "purple", "1.0")//sad
         } else if(thyNumber < 0.56){
             makeImage("http://i1.mirror.co.uk/incoming/article5090721.ece/ALTERNATES/s615b/Paula-Cochrane.jpg", 53, 3.5, 94, 93, "1.0")// miserable
+makeText("Miserable!", 75, 35, 12, "lobster", "black", "1.0")
         } else {
         makeImage("https://duqwellbeing.files.wordpress.com/2015/10/emoji-overwhelmed.png", 53, 3.5, 94, 93, "1.0")//overwhelmed
+makeText("Overwhelmed!", 68, 35, 12, "lobster", "black", "1.0")
         }
 }
 
@@ -49,9 +53,11 @@ function createThirdScene() {
     makeRect(70, 40, 60, 20, "yellow", "1.0")
     makeText("Happy!", 75, 55, 20, "sansita", "green", "1.0")//happy
         } else if(mineNumber < 0.85){
-            makeImage("https://rlv.zcache.com/face_with_tears_of_joy_emoji_classic_round_sticker-r8efa1045719143db81c284357ea6ef17_v9waf_8byvr_630.jpg?view_padding=%5B285%2C0%2C285%2C0%5D", 53, 3.5, 94, 93, "1.0")//joyful
+            makeImage("http://www.clipartkid.com/images/584/smiley-face-with-sunglasses-emoji-emoji-happy-face-white-smiling-Ol0Dbl-clipart.png", 3, 3.5, 194, 93, "1.0")//joyful
+makeText("Your Awesome!", 60, 65, 12, "lobster", "#e600e6", "1.0")
         } else {
             makeImage("http://pix.iemoji.com/images/emoji/apple/ios-9/256/relieved-face.png", 53, 3.5, 94, 93, "1.0")//content
+makeText("Content", 70, 60, 12, "lobster", "orange", "1.0")
         }
 }
 
