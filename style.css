@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Sansita');
 @import url('https://fonts.googleapis.com/css?family=Lobster');
+body{
+background: url('https://img.clipartfest.com/442fa88f3a5a809073378f3fd8922f62_confetti-transparent-clip-art-confetti-clipart-images_8000-5274.png');
+}
 #button-container {
     text-align: center;
 }
